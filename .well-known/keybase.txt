@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/lbm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lachlan.io
+  * I am lbm (https://keybase.io/lbm) on keybase.
+  * I have a public key with fingerprint 738B C9EA 7188 7252 D68A  08D6 20F7 6293 F529 5405
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01012542ccb0f52db8d6d3e9469cb51f1fad364f9db2cd6e88cd08460e34b24292c50a",
+      "fingerprint": "738bc9ea71887252d68a08d620f76293f5295405",
+      "host": "keybase.io",
+      "key_id": "20f76293f5295405",
+      "kid": "0101bcd6f77d2f3d915fb893bb30d312f895adccd9999e8b36fd9ed96d8f340c075a0a",
+      "uid": "99631cf4144cc7ced6ddd54204bd8819",
+      "username": "lbm"
+    },
+    "merkle_root": {
+      "ctime": 1614051927,
+      "hash_meta": "db65519584a615541c1b8d0cb86a09e3cde95540aaee6a55395cd2ff5afacb36",
+      "seqno": 19195563
+    },
+    "revoke": {
+      "sig_ids": [
+        "632f5363d799347af9e8ba198c7cf6bf15583ace3dc04934e0c8094ec4bb31f40f"
+      ]
+    },
+    "service": {
+      "hostname": "lachlan.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1614051937,
+  "expire_in": 157680000,
+  "prev": "bb4b68b2bc3591d960e2c61ba5065d73cbf656e66a785ce8d705a089480b2d5a",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtU3tQFVUcvpApoDbOoKbjqLU4aoHOvs7ZPWhKaaY5qJkp2aXreS0sXO6FvVcC
+gTKSfICMjg/Q0WnSzHyipfl+MCn5fiSaOqI1oiCBmqmhknYu5TjTdP7Z2d9+v+/7
+ft9vz7yOz7kiwjYfKB7cvqRvn7CjN4hrij4tP08ifpYrxedJ6bz1wb2MB4KedJtJ
+8ZKsyIoKdJVSIltAZcRkkGkc6RBRAhRLsTDToG4hRlTKIDdNymRThzLXdKLqKlIp
+kLEUJ1m2L4U7mY7tCwpaQzMJRRwbimkaquCFJpYFtSpbBlSRJqQQ0GUgGlP9gVCH
+MEdwgA+0/aImXjyt9v4H/8w3EYYsw2CqpTGkAIuYSCNEk5mmqJaJAGaUMiQON4kG
+LYY4Q5CZlqbLVDYAbvU9tZUOIagp1NIVXafUoFyEwJiIRdYJM00FhYAB7vhwBhdo
+L8mQCuKkDO6ke7nH8fuDoVxp0A59VaAijCpINcRsOJDqyeBBLJoYgUCUgaljqACg
+K1QRYcuUmBDLiGuUcSTKMsacQwyAhgAVo1kAW5gK/8JCgGf5/EIBCRoANWHB4dn+
+dB5SD9gpIrKAFP+BBDXVAhrU9mcxAyFNN7AVigAryBSzWZBYQt/UMOUao7IuEFym
+pox0TnWRn2LpsiUlF4T0nGybttKHtvR0ekxTvdj3z6YyHX/QT/1eUU8NBjMD8aFg
+grmZIeBHnHj+pfAQ28fEHyI6srkTsP0+MYZA/iczTWTGczJth3vsEAIY0JTFCenw
+bEFJiE6gSVRCNYAUsU6ZqxQqBAMZAmZolFgQQA4hNkxAuckMWezZRLopE5UB/CxE
+zRQ+cYrgFMn5cHCqw6WCqNnhWhtXWISrZ9eX2xwvOzje5SXuUefPLnl6q54PD10p
+V1Rkp6eVlIpOrlP9R+z7auvamWe/e7HmjZjeEzxd3x/U9Na6+9sfDZ5LV6llaaty
+kljMa/tGrtldWdx5z5ofduy/2P/+sRMvjHhzU58vYd0wo7j5pcnD2xW9vuna5aN5
+v9QXPMjadUVfV3srbGhT88Ha4ZvHjmpIPTR9edKCnKYavGT7kN39LlxPKBs2OBFW
+n1y8rFdMzE/XPmx7JeOenNlub3K79N/GnotccfjR8TnVayZ17wcHKoGuo4snLTnW
+si2h+fMfX7kMokvaX995JnJMx9JE+2JJj76D7g6dUUE7gKmr4/4qJfMj709evCA5
+Oev0z21P3PqjvH+Sf+uYWzUznzRehSUkcWQdjx5S77m0MHl55e3PcnZW6k0X3umQ
+U3XzRtrc6WPv3I1fuSX23oXH3/dMmzMjdmnUxG0N5d12n2wpP/jx5Hdn8vi8cS0b
+HnRuup2e//CT7MMbu5Tajc76QdtG78iIO71pY3Vj0YB5jQNq2/c44vY89CV6l1ZF
+RO8t/LVydfj4dWT9opX520HqgGUrYvJPFzq7xn/rbpsVGxOc8PXNWe7zByr/rLbD
+H7kv/b5x3Oykuu7EVXQDV7kXflP1KSgd2bBh4LiJ9b061ccWpRUeWVz35MTNppP0
+sbsit7ywZmX3smnHh60/96pTsSr30pSE6fWL3ptyaEHvljOxEVFbGmpq1zafCuy1
+Ju0IPtw8v9uKO8uuehL23OsyL2xf9Ntf/A0=
+=C6rn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lbm
+
+==================================================================
