@@ -1,0 +1,11 @@
+{
+  "editor.rulers": [80],
+  "files.exclude": {
+    "**/.cache": true,
+    "**/node_modules": true,
+    "public": true
+  },
+  "[mdx]": {
+    "editor.wordWrap": "bounded"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.4.4",
+    "@lekoarts/gatsby-theme-minimal-blog": "^4.0.0",
+    "gatsby": "^4.18.2",
+    "gatsby-omni-font-loader": "^2.0.0",
+    "gatsby-plugin-feed": "^4.18.1",
+    "gatsby-plugin-gatsby-cloud": "^4.18.1",
+    "gatsby-plugin-manifest": "^4.18.1",
+    "gatsby-plugin-sitemap": "^5.18.1",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
