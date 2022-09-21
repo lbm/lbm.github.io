@@ -1,6 +1,6 @@
 ---
 title: Hacking a White Noise Machine
-date: 2022-09-20
+date: 2022-09-21
 tags:
   - Hardware
   - Tutorials
@@ -22,7 +22,7 @@ Inside the unit is a fairly simple multi-PCB design. The main circuit board that
 
 ![The main PCB.](main-pcb.png)
 
-Unfortunately, a lot of the ICs on this device have no usable markings, so it's difficult to identify what is what. The 8-pin SOIC labeled "U5" is a good candidate for a flash chip, so let's start there. I connected a CH341A programmer to the chip with a SOIC-8 test clip and gave it a whirl with `flashrom`.
+Unfortunately, a lot of the ICs on this device have no usable markings, so it's difficult to identify what is what. The 8-pin SOIC labeled `U5` is a good candidate for a flash chip, so let's start there. I connected a CH341A programmer to the chip with a SOIC-8 test clip and gave it a whirl with `flashrom`.
 
 ```noLineNumbers
 $ flashrom --programmer ch341a_spi -r dump.bin
@@ -86,7 +86,7 @@ Reading flash... done.
 
 ## Resampling
 
-Nice! It appears we've successfully dumped the contents of the flash chip. Now let's figure out what we've got. If you run `file` on it, you'll see we have a FAT16 formatted image.
+Nice! We've successfully dumped the contents of the flash chip. Now let's figure out what we've got. If you run `file` on the dump, you'll see we have a FAT16 formatted image.
 
 ```noLineNumbers
 $ file dump.bin
@@ -98,20 +98,20 @@ sectors/cluster 32, reserved sectors 4, root entries 512, Media descriptor
 
 On macOS, you can actually just give the dump a `.img` extension, double click on it, and the image will be mounted and writable. If you're okay with modifying the image in place, then it's a quick and simple approach.
 
-The image itself is filled with 29 MP3 files. Now comes the hard part; finding some suitable sound samples that seamlessly loop. [freesound.org][freesound] is a good place to go hunting. I was lucky in that all the loops I found managed to fit within the image without any resizing. Of course, you could make it a bit bigger if needed (remember, we don't have any hard evidence about the true capacity of the flash chip).
+The image itself is filled with 29 MP3 files. Now comes the hard part; finding some suitable sound samples that seamlessly loop. [freesound.org][freesound] is a good place to go hunting. I was lucky in that all the loops I found managed to fit within the image without any resizing. Of course, you could make it a bit bigger if needed (remember though, we don't have any hard evidence about the true capacity of the flash chip).
 
 Now you just need to write it back!
 
 ![A CH341A programmer connected to the white noise machine's flash chip.](ch341a-programmer.png)
 
-## Conclusion
+## Final Thoughts
 
-I hope you were able to get something out of this post! I didn't get into the nitty-gritty of how to do things, and that's mainly because I wanted this to be more of a demonstration than a tutorial. Hopefully, you can see that hacking consumer electronics can (sometimes) be incredibly easy! In this case, I was able to take a product and further customize it to suit my personal needs. Make your purchases work for you, there's no need to settle for what came out of the box.
+I hope you were able to get something out of this post! I didn't get into the nitty-gritty of how to do things, and that's mainly because I wanted this to be more of a demonstration than a tutorial. Hopefully, you can see that hacking consumer electronics can (sometimes) be incredibly easy! In this case, I was able to take an already decent product and further customize it to suit my personal needs. Make your purchases work for you, there's no need to settle for what came out of the box.
 
-Could I have just bought a Bluetooth speaker and streamed [YouTube][youtube] to it? Sure, I guess. But where's the fun in that?
+Could I have just bought a Bluetooth speaker and streamed [YouTube][youtube] to it? Sure, but where's the fun in that?
 
 [md-wn01]: https://medcursor.com/products/white-noise-machine-black
 [lament-configuration]: https://hellraiser.fandom.com/wiki/Lament_Configuration
 [w25q128fv]: https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128FV
-[freesoundd]: https://freesound.org/
+[freesound]: https://freesound.org/
 [youtube]: https://www.youtube.com/watch?v=mPZkdNFkNps
