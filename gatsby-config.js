@@ -23,6 +23,7 @@ module.exports = {
       resolve: '@lekoarts/gatsby-theme-minimal-blog',
       options: {
         postsPrefix: '/blog',
+        mdx: false,
         formatString: 'MMM Do YYYY',
         navigation: [
           {
@@ -49,6 +50,30 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        lessBabel: true,
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 960,
+              quality: 90,
+              linkImagesToOriginal: false,
+              backgroundColor: 'transparent',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-autolink-headers',
+            options: {
+              icon: false,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: 'gatsby-omni-font-loader',
